@@ -22,15 +22,15 @@ class DataProvider extends Component {
         })
     }
 
-    aboutToggler = (e) => {
-        e.preventDefault()
-        e.persist()
-        this.setState(() => {
-            return (
-                { }
-            )
-        })
-    }
+    // aboutToggler = (e) => {
+    //     e.preventDefault()
+    //     e.persist()
+    //     this.setState(() => {
+    //         return (
+    //             { }
+    //         )
+    //     })
+    // }
 
     render() {
         const projects = [
@@ -84,6 +84,14 @@ class DataProvider extends Component {
             },
         ]
         const work = [
+            {
+                name: 'Assure Services',
+                title: 'Software Engineer',
+                location: 'Salt Lake City, UT',
+                details: ['Managed offshore QA team and UAT', 'Deployed master Client and API branches to all environments'],
+                years: '2019 - 2020',
+                img: `${require('../resources/assure.png')}`,
+            },
             {
                 name: 'Wasatch IT',
                 title: 'Field Engineer',

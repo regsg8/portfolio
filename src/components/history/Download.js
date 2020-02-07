@@ -21,11 +21,11 @@ const Download = (props) => {
     return (
         <div className={`resume${props.resumeView === 'download' ? 'Display' : 'NoDisplay'}`}>
             <StyledHistoryButton>
-                <a href={require('../../resume.jpg')} download>
+                <a href={require('../../resume.pdf')} download>
             Download Resume</a>
             </StyledHistoryButton>
             <StyledHistoryButton>
-                <a href={require('../../resume.jpg')} target="_blank" rel="noopener noreferrer">Open in New Tab</a>
+                <a href={require('../../resume.pdf')} target="_blank" rel="noopener noreferrer">Open in New Tab</a>
             </StyledHistoryButton>
         </div>
     )
