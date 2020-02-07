@@ -1,0 +1,101 @@
+
+/* Colors: 
+  Cerulean blue: '#4484CE',
+  Aluminum gray: '#D9D9D9',
+  Light gold: '#F9Cf00',
+  Tangerine orange: '#F19F4D',
+  Black: 'rgb(4, 10, 17)' 
+*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url('./resources/concrete.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  color: rgb(243, 244, 246);
+}
+#opaque {
+  background-color: #303030;
+  opacity: .6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 200vw;
+  width: 100vw;
+  z-index: -1
+}
+
+.resumeNoDisplay {
+  display: none;
+}
+.resumeDisplay {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  justify-content: center;
+}
+.resumeDownloadDisplay {
+  margin-top: 20px;
+  display: grid;
+  
+  min-height: 300px
+}
+.aboutDivCollapsed {
+  color: rgb(243, 244, 246);
+  max-height: 80px;
+  overflow: hidden;
+  transition: all .6s ease-in-out;
+}
+.aboutDivCollapsed:hover {
+  color: rgb(243, 244, 246);
+  box-shadow: 0px 0px 25px #202020;
+}
+.aboutDivCollapsed:active {
+  max-height: 300px;
+}
+i {
+  transition: all .4s ease-in-out 0s;
+}
+.aboutDivCollapsed:hover i {
+  transform: rotate(90deg);
+}
+
+.resume-button:focus {
+  outline: none;
+}
+.footer-icon:hover {
+  color: black;
+}
+
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: default;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: default;
+}
+
+.resume-button {
+  transition: all ease .3s;
+}
+.resume-button:hover {
+  box-shadow: 4px 4px #303030;
+  background-color: #303030;
+  color: rgb(243, 244, 246);
+}
+
+.project-image:hover {
+  box-shadow: 0px 0px 25px #202020;
+}
